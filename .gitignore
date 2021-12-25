@@ -3,3 +3,4 @@ nimblecache/
 htmldocs/
 .DS_Store
 /tests/test_ogham
+/tests/test_latin
