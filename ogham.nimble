@@ -1,8 +1,8 @@
 # Package
 
-version       = "0.1.0"
+version       = "1.0.0"
 author        = "stscoundrel / Sampo Silvennoinen"
-description   = "A new awesome nimble package"
+description   = "Convert Ogham inscriptions to latin text & vice versa."
 license       = "MIT"
 srcDir        = "src"
 
