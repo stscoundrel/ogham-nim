@@ -1,4 +1,4 @@
-import std/tables, std/unicode
+import std/tables, std/unicode, strutils
 
 proc transform(content: string, mapping: Table[string, string]) : string=
     result = ""
@@ -11,4 +11,11 @@ proc transform(content: string, mapping: Table[string, string]) : string=
         else:
             result.add($letter)
 
+proc replace(content: string, mapping: Table[string, string]) : string=
+    result = content
+
+    for dualLetter, oghamSign in mapping:
+        result = replace(result, dualLetter, oghamSign)
+
 export transform
+export replace
