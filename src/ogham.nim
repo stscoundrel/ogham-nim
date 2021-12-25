@@ -1,2 +1,3 @@
-proc add*(x, y: int): int =
-  return x + y
+from ogham/inscriptions import lettersToOgham
+
+export lettersToOgham
